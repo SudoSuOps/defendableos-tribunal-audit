@@ -32,3 +32,19 @@ Audited public prototype modules:
 - DefendableCloud readiness: `HOLD`
 - DefendableDocs readiness: `READY_WITH_LIMITATIONS`
 - Public demo readiness: `READY_WITH_LIMITATIONS`
+
+## Re-Audit Status
+
+Repaired public commits were independently re-audited under `reaudit/2026-05-26_tribunal_repair_v0.1/`.
+
+- All four repaired modules: `VERIFIED_AS_REPAIRED_WITH_LIMITATIONS`
+- Cross-module repaired verdict: `VERIFIED_AS_REPAIRED_WITH_LIMITATIONS`
+- Live-HTTP replacement proof closed the prior API promotion hold sufficiently for `READY_WITH_LIMITATIONS`
+- In-process `FastAPI TestClient` remains an environment-fragile unresolved limitation in the Codex re-audit environment
+- DefendableCloud API promotion: `READY_WITH_LIMITATIONS`
+- DefendableDocs readiness: `READY_WITH_LIMITATIONS`
+- Public demo readiness: `READY_WITH_LIMITATIONS`
+- Production deployment: `NOT CLEARED`
+- External SaaS enforcement: `NOT CLEARED`
+
+No production or external SaaS enforcement clearance is claimed.

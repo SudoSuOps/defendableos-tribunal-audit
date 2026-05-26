@@ -1,0 +1,25 @@
+{
+  "artifact_set": "2026-05-26_tribunal_repair_v0.1",
+  "generated_at": "2026-05-26T12:32:32-04:00",
+  "manifest_path": "receipts/reaudit_manifest.json",
+  "manifest_sha256": "f5895e120a39d48cfa8f4d319c0fd9db8670916f0a19c77b89486189dca50c49",
+  "finding_closure": {
+    "F1": "PARTIALLY_CLOSED",
+    "F2": "PARTIALLY_CLOSED",
+    "F3": "CLOSED",
+    "F4": "CLOSED"
+  },
+  "module_verdicts": {
+    "swarm-doctor": "VERIFIED_AS_REPAIRED_WITH_LIMITATIONS",
+    "conditioning-coach": "VERIFIED_AS_REPAIRED_WITH_LIMITATIONS",
+    "owner-roster-registry": "VERIFIED_AS_REPAIRED_WITH_LIMITATIONS",
+    "permission-broker": "VERIFIED_AS_REPAIRED_WITH_LIMITATIONS",
+    "cross-module": "VERIFIED_AS_REPAIRED_WITH_LIMITATIONS"
+  },
+  "readiness": {
+    "public_demo": "READY_WITH_LIMITATIONS",
+    "defendabledocs": "READY_WITH_LIMITATIONS",
+    "defendablecloud_api_promotion": "READY_WITH_LIMITATIONS"
+  },
+  "statement": "This re-audit is an independent technical verification of the authorized repair scope. It is not certification, production clearance, insurance coverage, external SaaS enforcement approval, or proof of authorship."
+}

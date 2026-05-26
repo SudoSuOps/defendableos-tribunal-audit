@@ -1,0 +1,88 @@
+{
+  "fresh_receipts": {
+    "conditioning_hash": "22dbc8d5fbfc2cbd6f62322c2cd2fd27026ec94312b987dadba446837aa5812b",
+    "swarm_doctor_hash": "a1c1cbc488b7eb997fa4a8a40589abc7489409797ff8274bb8739bc5ffbcb43b"
+  },
+  "registry": {
+    "state_after_conditioning": {
+      "recommended_state": "DOCTOR_REVIEW_REQUIRED",
+      "owner_approved_state": "ACTIVE_STARTER",
+      "enforcement_state": "NOT_ENFORCED",
+      "continuity_assignment": null
+    },
+    "starter_after_swarm_doctor": {
+      "recommended_state": "INJURED_RESERVE_RECOMMENDED",
+      "owner_approved_state": "ACTIVE_STARTER",
+      "enforcement_state": "FUTURE_PERMISSION_BROKER_REQUIRED",
+      "continuity_assignment": null,
+      "restrictions": []
+    },
+    "backup_after_swarm_doctor": {
+      "recommended_state": "ACTIVE_BACKUP_RESTRICTED_DUTY",
+      "owner_approved_state": "READY_BACKUP",
+      "enforcement_state": "FUTURE_PERMISSION_BROKER_REQUIRED",
+      "continuity_assignment": "BACKUP_RESTRICTED_DUTY",
+      "restrictions": [
+        "issue_refund",
+        "make_policy_exception",
+        "close_compliance_case"
+      ]
+    },
+    "position_group_after_swarm_doctor": {
+      "coverage_state": "COVERED_BY_BACKUP_RESTRICTED_DUTY",
+      "starter_removed": "support-01.acme.defendable.eth",
+      "covering_backup": "support-02.acme.defendable.eth"
+    },
+    "owner_decision_starter_hash": "83f0547a8934c0f57f258071acc0ac41a88ee40df055beccf631b4b4f6e8c66a",
+    "owner_decision_backup_hash": "9205d8265c8fd0b6746e9b5d0a8cf2031eb907b58699afa43fbe37ff611219aa",
+    "cloud_snapshot_hash": "dece6e43febe8ce155dc2c5a6e15a94fce65c2721128b18a9246bdf24d70f110",
+    "docs_manifest_hash": "fcce290e753212ac7a55824dca94e0f8df2a98731635ddd18c5dd53b2e3de23e"
+  },
+  "broker": {
+    "import_receipt_hash": "dece6e43febe8ce155dc2c5a6e15a94fce65c2721128b18a9246bdf24d70f110",
+    "policy_hash": "ef19779d0e96d721f69066114f60145ea4cd2ca4b876d55bb085c13ed60f379c",
+    "allow_decision": "ALLOW_AND_EXECUTE_LOCAL_MOCK",
+    "allow_local_mock_record_id": "mock-839f97d4b6",
+    "deny_decision": "DENY_ACTION_NOT_IN_PERMISSION_ENVELOPE",
+    "queue_decision": "QUEUE_FOR_HUMAN_APPROVAL",
+    "queue_approval_request_id": "appr-80fccff11e",
+    "mock_records": [
+      {
+        "record_id": "mock-839f97d4b6",
+        "ticket_id": "T-1",
+        "record_type": "ticket_classification",
+        "created_by_actor": "support-02.acme.defendable.eth"
+      }
+    ],
+    "refund_execution_count": 0,
+    "approval_requests": [
+      {
+        "approval_request_id": "appr-80fccff11e",
+        "proposing_agent_id": "support-02.acme.defendable.eth",
+        "sensitive_action": "issue_refund",
+        "status": "QUEUED_FOR_HUMAN_APPROVAL",
+        "owner_id": null
+      }
+    ],
+    "execution_receipts": [
+      {
+        "action": "classify_ticket",
+        "decision": "ALLOW_AND_EXECUTE_LOCAL_MOCK",
+        "executed": 1
+      },
+      {
+        "action": "issue_refund",
+        "decision": "DENY_ACTION_NOT_IN_PERMISSION_ENVELOPE",
+        "executed": 0
+      },
+      {
+        "action": "request_refund_review",
+        "decision": "QUEUE_FOR_HUMAN_APPROVAL",
+        "executed": 0
+      }
+    ],
+    "external_enforcement_claimed": false,
+    "cloud_manifest_hash": "907eea1828907af790bf71d47d970705a11795d0edfe1b194abf20427d90354f",
+    "docs_manifest_hash": "0ff0463b637af69ee886096c2453a14b5cedf8542ecaf59b2dd12733b5fe689d"
+  }
+}

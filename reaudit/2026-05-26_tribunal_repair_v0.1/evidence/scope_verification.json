@@ -1,0 +1,63 @@
+{
+  "swarm-doctor": {
+    "baseline": "084849e20d491e616bf4c76149addb305abaae00",
+    "repaired_target": "2135cc4395cb8521c0f6d382fb522339143b4c3a",
+    "fresh_head": "2135cc4395cb8521c0f6d382fb522339143b4c3a",
+    "diff_name_status": [
+      "M README.md",
+      "M RELEASE-roster-continuity-v0.1.md"
+    ],
+    "unauthorized_change_found": false
+  },
+  "conditioning-coach": {
+    "baseline": "b384cb98c08ef83ee7aaa626920415b041d4c5bb",
+    "repaired_target": "4319be4ccfb67460df2982196339cb1ea4b4d095",
+    "fresh_head": "4319be4ccfb67460df2982196339cb1ea4b4d095",
+    "diff_name_status": [
+      "M README.md",
+      "M RELEASE-conditioning-coach-v0.1.md"
+    ],
+    "unauthorized_change_found": false
+  },
+  "owner-roster-registry": {
+    "baseline": "88542d9947b73a4defbf301f319a5fcd0f062c6e",
+    "repaired_target": "f622ea98ab5871a0cd882a0e2bfd963529c8d4a6",
+    "fresh_head": "f622ea98ab5871a0cd882a0e2bfd963529c8d4a6",
+    "diff_name_status": [
+      "M README.md",
+      "M RELEASE-owner-roster-registry-v0.1.md",
+      "A docs/TRIBUNAL_REPAIR_API_PROOF_DIAGNOSIS_v0.1.md",
+      "M registry/docs_exporter.py",
+      "A tests/test_api_live_http.py",
+      "M tests/test_cloud_api.py",
+      "A data/exports/defendabledocs/acme-helpdesk/20260526T121454/AGENT_CASE_FILE_support-01.md",
+      "A data/exports/defendabledocs/acme-helpdesk/20260526T121454/AGENT_CASE_FILE_support-02.md",
+      "A data/exports/defendabledocs/acme-helpdesk/20260526T121454/EXPORT_MANIFEST.json",
+      "A data/exports/defendabledocs/acme-helpdesk/20260526T121454/OWNER_ROSTER_REPORT.html",
+      "A data/exports/defendabledocs/acme-helpdesk/20260526T121454/OWNER_ROSTER_REPORT.md",
+      "A data/exports/defendabledocs/acme-helpdesk/20260526T121454/RECEIPT_INDEX.json"
+    ],
+    "unauthorized_change_found": false
+  },
+  "permission-broker": {
+    "baseline": "7229e21d77f45e0b1cd68a51870cf479af3a6cab",
+    "repaired_target": "5c7ee6601d9975697b2ed81d0d2997cab1a7c37a",
+    "fresh_head": "5c7ee6601d9975697b2ed81d0d2997cab1a7c37a",
+    "diff_name_status": [
+      "M README.md",
+      "M RELEASE-permission-broker-v0.1.md",
+      "M broker/evidence_exporter.py",
+      "A docs/TRIBUNAL_REPAIR_API_PROOF_DIAGNOSIS_v0.1.md",
+      "M tests/test_api.py",
+      "A tests/test_api_live_http.py",
+      "A data/exports/defendablecloud/acme-helpdesk/20260526T121638/enforcement_manifest.json",
+      "A data/exports/defendablecloud/acme-helpdesk/20260526T121638/enforcement_snapshot.json",
+      "A data/exports/defendabledocs/acme-helpdesk/20260526T121638/ENFORCEMENT_RECEIPT_INDEX.json",
+      "A data/exports/defendabledocs/acme-helpdesk/20260526T121638/EXPORT_MANIFEST.json",
+      "A data/exports/defendabledocs/acme-helpdesk/20260526T121638/OWNER_PERMISSION_BROKER_REPORT.html",
+      "A data/exports/defendabledocs/acme-helpdesk/20260526T121638/OWNER_PERMISSION_BROKER_REPORT.md",
+      "A data/exports/defendabledocs/acme-helpdesk/20260526T121638/POLICY_SUMMARY.json"
+    ],
+    "unauthorized_change_found": false
+  }
+}

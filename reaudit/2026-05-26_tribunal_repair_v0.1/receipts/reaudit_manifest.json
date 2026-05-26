@@ -1,0 +1,42 @@
+{
+  "artifact_set": "2026-05-26_tribunal_repair_v0.1",
+  "generated_at": "2026-05-26T12:32:32-04:00",
+  "statement": "This re-audit is an independent technical verification of the authorized repair scope. It is not certification, production clearance, insurance coverage, external SaaS enforcement approval, or proof of authorship.",
+  "files": [
+    {
+      "path": "REAUDIT_CROSS_MODULE_REPORT.md",
+      "sha256": "a65fd1fedca5ab95f15bd42b67f9cbce8cc5afe2d2d528e58f19d7a61366266d",
+      "size": 3281
+    },
+    {
+      "path": "REAUDIT_EXECUTIVE_OWNER_REPORT.md",
+      "sha256": "64a686f4543f5b5ccbd8177b439a230ede96054e810b39c40bea73c05d63efa5",
+      "size": 5191
+    },
+    {
+      "path": "REAUDIT_FINDINGS_MATRIX.md",
+      "sha256": "5e299640e20e786364e91d79cff9d1bc3bb3da7c4553b0feafd410c724374281",
+      "size": 4962
+    },
+    {
+      "path": "evidence/cross_module_state.json",
+      "sha256": "40c587b19e4646709cfc92ae26973a59ceba7ccdafdbe13b84b91763b5fc8f43",
+      "size": 3409
+    },
+    {
+      "path": "evidence/environment_and_commands.md",
+      "sha256": "bb798d55ebaa3a25b54e1864ffa729f138050977f9d8497deca59458f7f9bc8e",
+      "size": 4773
+    },
+    {
+      "path": "evidence/runtime_reproductions.json",
+      "sha256": "d74fd19c08865fd27df80e9839017e76f5ee50025992155780c82f592b5dbf78",
+      "size": 3222
+    },
+    {
+      "path": "evidence/scope_verification.json",
+      "sha256": "a1c9b9faa3f6117a21b674d1047b4eb95787105daf4114731d75052e16e5fd1e",
+      "size": 3011
+    }
+  ]
+}
