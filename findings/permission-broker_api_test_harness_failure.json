@@ -1,0 +1,43 @@
+{
+  "finding_id": "finding-pb-api-harness-2026-05-26",
+  "module": "permission-broker",
+  "commit": "7229e21d77f45e0b1cd68a51870cf479af3a6cab",
+  "severity": "HIGH",
+  "classification": "TEST_HARNESS_FAILURE",
+  "summary": "Published FastAPI TestClient API proof hangs in clean audit environment, while live uvicorn HTTP works.",
+  "environment": {
+    "python": "3.13.7",
+    "dependencies": {
+      "anyio": "4.12.1",
+      "fastapi": "0.136.1",
+      "httpx": "0.28.1",
+      "pydantic": "2.12.5",
+      "pytest": "9.0.3",
+      "starlette": "1.0.0",
+      "uvicorn": "0.46.0"
+    }
+  },
+  "reproduction": {
+    "testclient_command": "timeout 20s python3 -u -c \"from fastapi.testclient import TestClient; from broker import app as appmod; print('before TestClient'); client=TestClient(appmod.app); print('after TestClient'); resp=client.get('/health'); print('after response', resp.status_code, resp.text)\"",
+    "hang_point": "client.get('/health')",
+    "stdout_before_timeout": [
+      "before TestClient",
+      "after TestClient"
+    ],
+    "pytest_command": "timeout 20s env PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 python3 -m pytest -vv -s --setup-show permission-broker/tests/test_api.py::test_unknown_agent_denied",
+    "pytest_stage_reached": "collection complete, fixture setup complete, test body entered"
+  },
+  "live_server": {
+    "startup_command": "python3 -m uvicorn broker.app:app --host 127.0.0.1 --port 18089",
+    "health_status": 200,
+    "enforcement_summary_status": 200,
+    "shutdown_clean": true
+  },
+  "claim_impact": {
+    "cli_proof_valid": true,
+    "local_export_proof_valid": true,
+    "api_proof_invalidated": true,
+    "defendablecloud_readiness_held": true,
+    "cli_enforcement_proof_independently_supported": true
+  }
+}

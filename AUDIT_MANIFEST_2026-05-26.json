@@ -1,0 +1,102 @@
+{
+  "artifacts": [
+    {
+      "bytes": 1287,
+      "path": "README.md",
+      "sha256": "22e91355c71c62f725e850a59df55665fd4847db41996142b51a2941869daaf7"
+    },
+    {
+      "bytes": 88,
+      "path": ".gitignore",
+      "sha256": "4805ec46c15882fec02f7ff3598faea38ebe33215b44b0fe0245813131c7bb58"
+    },
+    {
+      "bytes": 10906,
+      "path": "TRIBUNAL_FINAL_REPORT_2026-05-26.md",
+      "sha256": "1360c96bc5650a7b2fc8a354434476d637dac7dfd65df44c061f349d35063974"
+    },
+    {
+      "bytes": 5411,
+      "path": "AUDIT_REPORT_2026-05-26.md",
+      "sha256": "871a6a9f5d81fcf8be84ca25730e7cead9bb33acbb428732fdf0d19fd08f90c7"
+    },
+    {
+      "bytes": 4599,
+      "path": "MODULE_OWNER_ROSTER_REGISTRY_REPORT.md",
+      "sha256": "d226bd3506f0c938781155e0848869474e849e5b6f2dcccb67a0fd74f18388b7"
+    },
+    {
+      "bytes": 5481,
+      "path": "MODULE_PERMISSION_BROKER_REPORT.md",
+      "sha256": "8da70010554da72d8c631e5e0727f9f7e7b6e40b6500eb9516354fde27abffb5"
+    },
+    {
+      "bytes": 1957,
+      "path": "EXECUTIVE_OWNER_REPORT.md",
+      "sha256": "f6b96c8a4930622860cbea0e1f76873f754d6034304ab64c9d5a6c39be17dac1"
+    },
+    {
+      "bytes": 513,
+      "path": "evidence/ENVIRONMENT_CAPTURE_2026-05-26.md",
+      "sha256": "a1d661a644f093ecc2fdc309fa4c88926134109e054e281252e3419904aeb022"
+    },
+    {
+      "bytes": 2465,
+      "path": "evidence/EXACT_EXECUTION_COMMANDS_2026-05-26.md",
+      "sha256": "b7a6daf7cae616b1785569023a57161d998ca06d8e5b20bdbf9e72892e31bc48"
+    },
+    {
+      "bytes": 1279,
+      "path": "evidence/LIVE_SERVER_RESULTS_2026-05-26.md",
+      "sha256": "e7e26e9f6a015237ba37817d3358f9fc65223fa84dbfdeadf0901ce9f2b2998b"
+    },
+    {
+      "bytes": 786,
+      "path": "evidence/FRESH_INTEROP_AND_SIDE_EFFECTS_2026-05-26.md",
+      "sha256": "558598bb52090ad6e97f2ae10521389090d39a54905770fe07fe27c357972ff8"
+    },
+    {
+      "bytes": 313,
+      "path": "harness/repro_owner_roster_registry_testclient.sh",
+      "sha256": "3542a06bd00a605950e1d5705c883755d7ac3b4c18eba1de362148a69520baf8"
+    },
+    {
+      "bytes": 311,
+      "path": "harness/repro_permission_broker_testclient.sh",
+      "sha256": "c654260f2fad4953a3da4504fa9f24275ac86e1d46ef1ca9c6d694ffe15fdbf3"
+    },
+    {
+      "bytes": 383,
+      "path": "harness/repro_control_fastapi_testclient.sh",
+      "sha256": "33609951ba314bfb4fcb61e327c150d140ddf072c01eb9b6b649a32913d6fc7a"
+    },
+    {
+      "bytes": 563,
+      "path": "harness/repro_control_asgi_transport.sh",
+      "sha256": "4014ac2722ab0d6339421b49a184414751c9fe724ad796f48e17ca3a5da6cb05"
+    },
+    {
+      "bytes": 1936,
+      "path": "safety/SAFETY_GATE_REPORT_2026-05-26.md",
+      "sha256": "4d0c8d0d9822faf3a2f04002f16fda82b0a4fce7304270671ab8c1f67c079fe9"
+    },
+    {
+      "bytes": 1708,
+      "path": "findings/owner-roster-registry_api_test_harness_failure.json",
+      "sha256": "1fc0b3c5f980546aea47a4a526e836cbcc76f64f946f0e89cd8613504f470c9b"
+    },
+    {
+      "bytes": 1756,
+      "path": "findings/permission-broker_api_test_harness_failure.json",
+      "sha256": "171fafee6bf68b06a43d43ec8797d6f5336b4de69095d8a4de9e5a95877ba5a9"
+    },
+    {
+      "bytes": 1226,
+      "path": "findings/cross-module_api_proof_hold.json",
+      "sha256": "6abfbf3d3b1d85823e42e39a88abf9f8e7ca1083935962121446fb7e91fb9d43"
+    }
+  ],
+  "generated_at": "2026-05-26T16:05:00Z",
+  "manifest_id": "audit-manifest-2026-05-26",
+  "workspace": "defendableos-tribunal-audit"
+}

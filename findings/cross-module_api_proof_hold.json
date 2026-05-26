@@ -1,0 +1,39 @@
+{
+  "finding_id": "finding-cross-module-api-proof-hold-2026-05-26",
+  "severity": "HIGH",
+  "summary": "owner-roster-registry and permission-broker both fail published in-process API proof in the clean audit environment, while live uvicorn HTTP succeeds.",
+  "affected_modules": [
+    {
+      "module": "owner-roster-registry",
+      "classification": "TEST_HARNESS_FAILURE",
+      "commit": "88542d9947b73a4defbf301f319a5fcd0f062c6e"
+    },
+    {
+      "module": "permission-broker",
+      "classification": "TEST_HARNESS_FAILURE",
+      "commit": "7229e21d77f45e0b1cd68a51870cf479af3a6cab"
+    }
+  ],
+  "environment": {
+    "python": "3.13.7",
+    "dependencies": {
+      "anyio": "4.12.1",
+      "fastapi": "0.136.1",
+      "httpx": "0.28.1",
+      "pydantic": "2.12.5",
+      "pytest": "9.0.3",
+      "starlette": "1.0.0",
+      "uvicorn": "0.46.0"
+    }
+  },
+  "control_evidence": {
+    "trivial_fastapi_testclient_hangs": true,
+    "trivial_fastapi_asgi_transport_hangs": true,
+    "live_uvicorn_http_succeeds": true
+  },
+  "claim_impact": {
+    "api_release_proof_held": true,
+    "defendablecloud_transition_readiness_held": true,
+    "cli_and_local_export_proofs_still_valid_where_independently_executed": true
+  }
+}

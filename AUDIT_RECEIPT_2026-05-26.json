@@ -1,0 +1,37 @@
+{
+  "api_proof_hold": true,
+  "cross_module_verdict": "VERIFIED_WITH_LIMITATIONS",
+  "defendablecloud_readiness": "HOLD",
+  "defendabledocs_readiness": "READY_WITH_LIMITATIONS",
+  "environment": {
+    "dependencies": {
+      "anyio": "4.12.1",
+      "fastapi": "0.136.1",
+      "httpx": "0.28.1",
+      "pydantic": "2.12.5",
+      "pytest": "9.0.3",
+      "starlette": "1.0.0",
+      "uvicorn": "0.46.0"
+    },
+    "python": "3.13.7"
+  },
+  "generated_at": "2026-05-26T16:05:00Z",
+  "manifest_path": "AUDIT_MANIFEST_2026-05-26.json",
+  "manifest_sha256": "b91d6746cf9c68595594179a13847dd9ee9969712b3cb8e2852e7cf2fbb371ce",
+  "module_verdicts": {
+    "conditioning-coach": "VERIFIED_WITH_LIMITATIONS",
+    "owner-roster-registry": "VERIFIED_WITH_LIMITATIONS",
+    "permission-broker": "VERIFIED_WITH_LIMITATIONS",
+    "swarm-doctor": "VERIFIED_WITH_LIMITATIONS"
+  },
+  "public_demo_readiness": "READY_WITH_LIMITATIONS",
+  "receipt_id": "audit-receipt-2026-05-26",
+  "receipt_sha256": "85f641bdde73842aa855c31a0d0bdf0ee51b880f341f75760c461a2cbd6264d3",
+  "safety_gate_result": "pass",
+  "scope": {
+    "conditioning-coach": "b384cb98c08ef83ee7aaa626920415b041d4c5bb",
+    "owner-roster-registry": "88542d9947b73a4defbf301f319a5fcd0f062c6e",
+    "permission-broker": "7229e21d77f45e0b1cd68a51870cf479af3a6cab",
+    "swarm-doctor": "084849e20d491e616bf4c76149addb305abaae00"
+  }
+}
